@@ -1,9 +1,9 @@
 from speech_recognition import Recognizer, AudioFile
 from pydub import AudioSegment
 
-# given an mp3 file convert to wav for speech recognition
-def mp3_to_wav(audiofile):
-    audio = AudioSegment.from_mp3(audiofile) 
+# given any format file convert to wav for speech recognition
+def to_wav(audiofile):
+    audio = AudioSegment.from_file(audiofile) 
     wav_file = f'{audiofile}.wav'
     audio.export(wav_file, format='wav')
 

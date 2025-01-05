@@ -1,6 +1,5 @@
 from speech_recognition import Recognizer, AudioFile
 from pydub import AudioSegment
-import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
 
 # requires install ffmpeg
@@ -41,4 +40,18 @@ def analyze_text(text):
     return mood 
 
 
+def main():
 
+    audio_file = 'assets/greatgatsby01.mp3'
+    print('Converting to .wav file...')
+    wav_file = to_wav(audio_file)
+
+    print('Transcribe in process...')
+    text = transcribe(wav_file)
+    print(text)  # output delayed based on size of file
+
+    analyze = analyze_text(text)
+    print(analyze)
+
+if __name__ == '__main__':
+    main()

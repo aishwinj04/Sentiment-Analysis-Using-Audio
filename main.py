@@ -1,7 +1,7 @@
 from speech_recognition import Recognizer, AudioFile
 from pydub import AudioSegment
 
-# brew install ffmpeg
+# requires install ffmpeg
 
 # given any format file convert to wav for speech recognition
 def to_wav(audio_file):

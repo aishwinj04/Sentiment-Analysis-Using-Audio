@@ -16,5 +16,5 @@ This program converts audio files (e.g., MP3) into text using **Speech-to-Text**
   - `pydub` for audio file conversion (MP3 to WAV).
 - **FFmpeg** for audio conversion.
 
-## Note: This version is only for the command line. Working on GUI.
+##### Note: This version is only for the command line. Working on GUI.
 
